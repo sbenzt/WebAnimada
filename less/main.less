@@ -4,7 +4,16 @@
 @primario : #26a5d3;
 @oscuro : #333333;
 @luz : #f4f4f4;
-@verde : #6fbb10;
+@verde : #53DF83;
+
+body {
+  padding-top: 50px;
+}
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+
 
 .color-verde{
 	color : @verde;
@@ -27,4 +36,129 @@ h1, h2, h3, h4, h5, h6{
 	margin: 20px 0 35px;
 	text-transform : uppercase;
 	font-family : "Monserrat", "Helvetica neue",Helvetica,sans-serif,arial;
+	letter-spacing: 1px;
 }
+
+p{
+	margin: 0 0 25px;
+	font-size: 18px;
+	line-height: 1.6em;
+}
+
+a{
+	color: @primario;
+}
+
+a:hover , a:focus{
+	text-decoration: none;
+	color: oscueroen(@primario,20%);
+}
+
+//Navegacion
+
+.navbar{
+	margin-bottom : 0 ;
+	border-bottom: 1px solid rgba(255,255,255,0.3);
+	text-transform : uppercase;
+	font-family : "Monserrat", "Helvetica neue",Helvetica,sans-serif,arial;
+	background-color: @verde;
+}
+
+.navbar-brand{
+	font-weight: 700;
+}
+
+.navbar-brand:focus{
+	outline:none;
+}
+
+.navbar-personalizada a{
+	color:@luz;
+}
+
+.navbar-personalizada .nav li a{
+	-webkit-transition: background .3s ease-in-out;
+	-moz-transition: background .3s ease-in-out;
+	transition: background .3s ease-in-out;
+}
+
+.navbar-personalizada .nav li a:hover,
+.navbar-personalizada .nav li a:focus,
+.navbar-personalizada .nav li a:active,
+{
+	outline:none;
+	backgrund-color: rgba(255,255,255,0.4);
+}
+
+.navbar-toggle{
+	padding: 4px 6px;
+	font-size: 16px;
+	color: @luz;
+}
+
+.navbar-toggle:focus,
+.navbar-toggle:active{
+	outline:none;
+}
+
+
+@media(min-witdh:787px){
+	
+	.navbar{
+		padding: 20px 0;
+		border-bottom: none;
+		letter-spacing: 1px;
+		backgrund: transparent;
+		-webkit-transition: background .5s ease-in-out , padding .5s ease-in-out;
+		-moz-transition:background .5s ease-in-out , padding .5s ease-in-out;
+		transition: background .5s ease-in-out , padding .5s ease-in-out;
+	}
+
+	.colapsar-nav{
+		padding: 0;
+		background-color:@verde;
+	}
+
+	.navbar-personalizada .colapsar-nav{
+		border-bottom: 1px solid rgba(111,187,16,0.4);
+	}
+
+
+}
+
+
+
+//intro
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
